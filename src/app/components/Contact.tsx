@@ -15,7 +15,8 @@ const Contact = () => {
           className="grid md:grid-cols-2 gap-16 md:gap-24"
         >
           <div>
-            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-8">Contact</h2>
+            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-4">Contact</h2>
+            <div className="w-12 h-1 bg-white rounded-full mb-8" />
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
               Let's build <br /> something <span className="text-neutral-400">meaningful.</span>
             </h3>

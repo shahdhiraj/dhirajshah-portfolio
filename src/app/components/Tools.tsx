@@ -21,9 +21,10 @@ const Tools = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid md:grid-cols-12 gap-12 md:gap-8 items-center">
           <div className="md:col-span-4">
-            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-500">Toolkit</h2>
+            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-500 mb-4">Toolkit</h2>
+            <div className="w-12 h-1 bg-neutral-900 rounded-full" />
           </div>
-          
+
           <div className="md:col-span-8">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {tools.map((tool, index) => (

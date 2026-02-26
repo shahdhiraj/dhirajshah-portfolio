@@ -30,7 +30,8 @@ const Services = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid md:grid-cols-12 gap-12 md:gap-8 mb-16">
           <div className="md:col-span-4">
-            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-500">Services</h2>
+            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-500 mb-4">Services</h2>
+            <div className="w-12 h-1 bg-neutral-900 rounded-full" />
           </div>
           <div className="md:col-span-8">
             <h3 className="text-3xl md:text-4xl font-medium text-neutral-900">
@@ -58,7 +59,7 @@ const Services = () => {
                   {service.description}
                 </p>
               </div>
-              
+
               <div className="mt-8 opacity-0 group-hover:opacity-100 transition-opacity flex justify-end">
                 <ArrowUpRight size={24} />
               </div>

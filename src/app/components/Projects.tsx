@@ -37,17 +37,18 @@ const Projects = () => {
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="grid md:grid-cols-12 gap-12 md:gap-8 mb-16">
           <div className="md:col-span-4">
-            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-400">Selected Work</h2>
+            <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-4">Selected Work</h2>
+            <div className="w-12 h-1 bg-white rounded-full" />
           </div>
           <div className="md:col-span-8">
-            <RevealText 
-              text="A curation of projects" 
-              tag="h3" 
+            <RevealText
+              text="A curation of projects"
+              tag="h3"
               className="text-3xl md:text-4xl font-medium text-white leading-tight"
             />
-            <RevealText 
-              text="defining visual identities." 
-              tag="h3" 
+            <RevealText
+              text="defining visual identities."
+              tag="h3"
               className="text-3xl md:text-4xl font-medium text-white leading-tight"
               delay={0.1}
             />
@@ -62,16 +63,15 @@ const Projects = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.8, ease: "easeOut" }}
-              className={`group relative overflow-hidden bg-neutral-800 aspect-[4/3] cursor-none ${
-                project.size === "large" ? "md:row-span-2 md:aspect-[3/4]" : ""
-              }`}
+              className={`group relative overflow-hidden bg-neutral-800 aspect-[4/3] ${project.size === "large" ? "md:row-span-2 md:aspect-[3/4]" : ""
+                }`}
             >
               <ImageWithFallback
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-60"
               />
-              
+
               <div className="absolute inset-0 p-8 flex flex-col justify-end translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                 <div className="border-t border-white/20 pt-6 flex justify-between items-end">
                   <div>
@@ -86,7 +86,7 @@ const Projects = () => {
             </motion.div>
           ))}
         </div>
-        
+
         <div className="mt-16 text-center">
           <button className="text-white border-b border-white pb-1 hover:text-neutral-300 hover:border-neutral-300 transition-colors uppercase tracking-widest text-sm">
             View All Projects

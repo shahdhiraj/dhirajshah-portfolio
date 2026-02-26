@@ -3,7 +3,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { motion, useScroll, useSpring } from "motion/react";
 import { SmoothScrollProvider } from "../context/SmoothScrollContext";
-import CustomCursor from "./ui/CustomCursor";
 
 const LayoutContent = () => {
   const { scrollYProgress } = useScroll();
@@ -14,8 +13,7 @@ const LayoutContent = () => {
   });
 
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white cursor-none">
-      <CustomCursor />
+    <div className="min-h-screen bg-neutral-50 text-neutral-900 font-sans selection:bg-neutral-900 selection:text-white">
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-neutral-900 origin-left z-50"
         style={{ scaleX }}
