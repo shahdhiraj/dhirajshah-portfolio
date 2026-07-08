@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Mail, MapPin, Phone, ArrowRight } from "lucide-react";
+import { ChromaButton } from "./ui/ChromaButton";
 
 const Contact = () => {
   return (
@@ -18,10 +19,10 @@ const Contact = () => {
             <h2 className="text-sm font-semibold tracking-widest uppercase text-neutral-400 mb-4">Contact</h2>
             <div className="w-12 h-1 bg-white rounded-full mb-8" />
             <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-              Let's build <br /> something <span className="text-neutral-400">meaningful.</span>
+              Let's create <br /> something <span className="text-neutral-400">extraordinary.</span>
             </h3>
             <p className="text-xl text-neutral-400 mb-12 max-w-md">
-              Available for freelance projects and strategic partnerships. Let's discuss how we can elevate your brand.
+              Available for strategic partnerships and high-impact design projects. Let's discuss how we can scale your vision.
             </p>
 
             <div className="space-y-6">
@@ -35,7 +36,7 @@ const Contact = () => {
                 <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300">
                   <Phone size={20} />
                 </div>
-                <a href="tel:+977981718103" className="hover:text-neutral-300 transition-colors">+977 981718103</a>
+                <a href="tel:+9779817810403" className="hover:text-neutral-300 transition-colors">+977 9817810403</a>
               </div>
               <div className="flex items-center gap-4 text-lg">
                 <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center text-neutral-300">
@@ -78,10 +79,14 @@ const Contact = () => {
                 />
               </div>
 
-              <button className="w-full py-5 bg-white text-neutral-900 font-bold text-lg rounded-full mt-8 hover:bg-neutral-200 transition-colors flex items-center justify-center gap-3 group">
+              <ChromaButton 
+                containerClassName="w-full mt-8"
+                className="!w-full group"
+                size="lg"
+              >
                 Get in Touch
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
-              </button>
+              </ChromaButton>
             </form>
           </div>
         </motion.div>

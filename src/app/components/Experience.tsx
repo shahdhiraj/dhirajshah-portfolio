@@ -22,21 +22,21 @@ const Experience = () => {
 
               <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
                 <h3 className="text-2xl font-bold text-neutral-900">Mypower</h3>
-                <span className="text-neutral-500 font-medium">Oct 2022 – Mar 2025</span>
+                <span className="text-neutral-500 font-medium">Oct 2018 – Mar 2025</span>
               </div>
 
               <h4 className="text-lg text-neutral-700 font-medium mb-6">Senior Graphic Designer / UI-UX Designer</h4>
 
               <div className="space-y-6 text-neutral-600 leading-relaxed">
                 <p>
-                  Led the complete design lifecycle for Mypower's digital products, establishing a unified design language and improving user engagement metrics significantly.
+                  Spearheaded the end-to-end design lifecycle for Mypower's digital ecosystem, establishing a unified visual language that drove significant improvements in user engagement and brand perception.
                 </p>
 
                 <ul className="space-y-2 list-disc list-outside ml-4 marker:text-neutral-400">
-                  <li>Direct ownership of brand identity and visual governance across all channels.</li>
-                  <li>Architected and maintained a comprehensive design system in Figma.</li>
-                  <li>Collaborated closely with engineering to bridge the design-development gap.</li>
-                  <li>Mentored junior designers and established design review processes.</li>
+                  <li>Strategic oversight of brand identity and visual governance across all digital and physical touchpoints.</li>
+                  <li>Architected and scaled a comprehensive design system in Figma, streamlining cross-functional workflows.</li>
+                  <li>Partnered with engineering leadership to bridge the design-to-development gap, ensuring high-fidelity implementation.</li>
+                  <li>Mentored design talent and established rigorous design review standards to maintain excellence.</li>
                 </ul>
 
                 <div className="bg-neutral-50 p-6 rounded-lg border border-neutral-100 mt-6">
@@ -55,19 +55,7 @@ const Experience = () => {
               </div>
             </div>
 
-            {/* Previous Role Placeholder - Adding one for visual balance as implied by "7+ years experience" */}
-            <div className="relative border-l-2 border-neutral-100 pl-8 md:pl-12">
-              <span className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-neutral-300 border-4 border-white"></span>
 
-              <div className="flex flex-col md:flex-row md:items-baseline justify-between mb-4">
-                <h3 className="text-2xl font-bold text-neutral-400">Previous Roles</h3>
-                <span className="text-neutral-400 font-medium">2017 – 2022</span>
-              </div>
-
-              <p className="text-neutral-400">
-                Prior experience includes roles in digital agencies and freelance brand strategy consultation, working with diverse clients in tech and retail.
-              </p>
-            </div>
           </div>
         </motion.div>
       </div>

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import { Download } from "lucide-react";
 
 const About = () => {
   return (
@@ -27,7 +28,7 @@ const About = () => {
 
           <div className="md:col-span-8">
             <h3 className="text-3xl md:text-4xl font-medium leading-tight mb-8 text-neutral-900">
-              With over 7 years of experience, I bridge the gap between brand strategy and digital product design.
+              Bridging the gap between visionary brand strategy and high-performance digital product design with 7+ years of expertise.
             </h3>
 
             <div className="grid md:grid-cols-2 gap-8 text-neutral-600 leading-relaxed">
@@ -45,15 +46,15 @@ const About = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <span className="w-4 h-[1px] bg-neutral-300 mt-3"></span>
-                    <span>Brand ownership & governance</span>
+                    <span>Strategic Brand Direction & Visual Governance</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-4 h-[1px] bg-neutral-300 mt-3"></span>
-                    <span>Design systems & UI/UX leadership</span>
+                    <span>Design Systems & UI/UX Leadership</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-4 h-[1px] bg-neutral-300 mt-3"></span>
-                    <span>Engineering & Product collaboration</span>
+                    <span>Cross-functional Product Strategy & Engineering Alignment</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <span className="w-4 h-[1px] bg-neutral-300 mt-3"></span>
@@ -62,6 +63,31 @@ const About = () => {
                 </ul>
               </div>
             </div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="mt-10 flex items-center gap-6"
+            >
+              <a
+                href="https://drive.google.com/file/d/1yMNXrAIRJut2xqt8wQYJ2_IKHM7t_C1y/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 bg-neutral-900 text-white rounded-full font-medium text-lg hover:bg-neutral-800 transition-all group shadow-md shadow-neutral-200"
+              >
+                Download CV
+                <Download size={18} className="group-hover:-translate-y-1 group-hover:translate-x-0 transition-transform" />
+              </a>
+              <div className="w-16 h-16 p-2 bg-white rounded-xl border border-neutral-200 shadow-sm flex items-center justify-center -rotate-2 hover:rotate-0 transition-transform duration-300">
+                <img
+                  src="/qr-code.png"
+                  alt="QR Code for CV"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+            </motion.div>
           </div>
         </motion.div>
       </div>

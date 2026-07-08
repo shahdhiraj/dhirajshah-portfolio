@@ -5,22 +5,22 @@ const services = [
   {
     icon: <PenTool className="w-8 h-8" />,
     title: "Brand Identity & Strategy",
-    description: "Building memorable brands with comprehensive guidelines, visual languages, and strategic positioning."
+    description: "Developing cohesive visual languages and strategic positioning that define premium brand experiences."
   },
   {
     icon: <Layout className="w-8 h-8" />,
     title: "UI/UX & Design Systems",
-    description: "Creating scalable design libraries and intuitive user interfaces that streamline development and enhance usability."
+    description: "Architecting scalable design frameworks and intuitive interfaces that accelerate development and elevate usability."
   },
   {
     icon: <Layers className="w-8 h-8" />,
-    title: "Creative Direction",
-    description: "Guiding visual narratives across all touchpoints to ensure consistency and premium quality execution."
+    title: "Creative Leadership",
+    description: "Guiding high-level visual narratives to ensure consistent, premium execution across every platform."
   },
   {
     icon: <TrendingUp className="w-8 h-8" />,
-    title: "Performance & Growth",
-    description: "Data-driven design optimizations focused on increasing engagement, retention, and conversion rates."
+    title: "Growth & Optimization",
+    description: "Data-informed design strategies focused on maximizing user retention, engagement, and business conversion."
   }
 ];
 

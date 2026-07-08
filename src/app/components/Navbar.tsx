@@ -3,12 +3,13 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useSmoothScroll } from "../context/SmoothScrollContext";
+import { ChromaButton } from "./ui/ChromaButton";
 
 const navLinks = [
   { name: "About", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Experience", href: "#experience" },
-  { name: "Projects", href: "#projects" },
+  { name: "Selected Work", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -29,7 +30,7 @@ const Navbar = () => {
 
   const handleScrollTo = (id: string) => {
     setIsOpen(false);
-    
+
     if (location.pathname !== "/") {
       navigate("/");
       // Wait for navigation to complete before scrolling
@@ -58,13 +59,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        scrolled ? "bg-white/80 backdrop-blur-md border-b border-neutral-200 py-4" : "bg-transparent py-6"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${scrolled ? "bg-white/80 backdrop-blur-md border-b border-neutral-200 py-4" : "bg-transparent py-6"
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <Link 
-          to="/" 
+        <Link
+          to="/"
           onClick={() => {
             if (lenis) lenis.scrollTo(0);
             else window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -85,12 +85,12 @@ const Navbar = () => {
               {link.name}
             </button>
           ))}
-          <button 
+          <ChromaButton
             onClick={() => handleScrollTo('#contact')}
-            className="bg-neutral-900 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-neutral-800 transition-colors cursor-hover"
+            size="md"
           >
             Let's Talk
-          </button>
+          </ChromaButton>
         </div>
 
         {/* Mobile Toggle */}

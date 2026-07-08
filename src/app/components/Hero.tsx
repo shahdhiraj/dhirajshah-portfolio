@@ -2,6 +2,8 @@ import { motion } from "motion/react";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { useSmoothScroll } from "../context/SmoothScrollContext";
 import { RevealText } from "./ui/RevealText";
+import { WordReveal } from "./ui/WordReveal";
+import { ChromaButton } from "./ui/ChromaButton";
 
 const Hero = () => {
   const lenis = useSmoothScroll();
@@ -53,19 +55,19 @@ const Hero = () => {
             />
 
             <div className="mb-10">
-              <RevealText
+              <WordReveal
                 text="Senior Brand,"
                 tag="h1"
                 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1.05] text-neutral-900"
                 delay={0.1}
               />
-              <RevealText
+              <WordReveal
                 text="UI/UX & Digital"
                 tag="h1"
                 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1.05] text-neutral-900"
                 delay={0.2}
               />
-              <RevealText
+              <WordReveal
                 text="Design Leader"
                 tag="h1"
                 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[1.05] text-neutral-900"
@@ -79,7 +81,7 @@ const Hero = () => {
               transition={{ delay: 0.6, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="text-xl md:text-2xl text-neutral-600 max-w-xl leading-relaxed mb-12 font-light"
             >
-              I help tech companies build brands and digital experiences that people actually love — making the complicated feel simple and human.
+              Architecting premium digital experiences and brand identities that resonate. I transform complex business challenges into intuitive, human-centric design solutions.
             </motion.p>
 
             <motion.div
@@ -88,22 +90,23 @@ const Hero = () => {
               transition={{ delay: 0.8, duration: 1, ease: [0.16, 1, 0.3, 1] }}
               className="flex flex-col sm:flex-row gap-5"
             >
-              <button
+              <ChromaButton
                 onClick={scrollToWork}
-                className="px-10 py-5 bg-neutral-900 text-white rounded-full font-semibold text-lg hover:bg-neutral-800 transition-all flex items-center justify-center gap-3 group cursor-hover shadow-lg shadow-neutral-200"
+                size="md"
               >
                 View Latest Work
                 <ArrowRight
-                  size={20}
+                  size={16}
                   className="group-hover:translate-x-1 transition-transform"
                 />
-              </button>
-              <button
+              </ChromaButton>
+              <ChromaButton
                 onClick={scrollToContact}
-                className="px-10 py-5 border-2 border-neutral-200 text-neutral-900 rounded-full font-semibold text-lg hover:border-neutral-900 hover:bg-neutral-50 transition-all flex items-center justify-center cursor-hover"
+                variant="secondary"
+                size="md"
               >
                 Let's Collaborate
-              </button>
+              </ChromaButton>
             </motion.div>
           </motion.div>
 
